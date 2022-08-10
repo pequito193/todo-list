@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: 20vw 1fr;
+}
+
+
+
+/* Sidebar starts here */
+.sidebar {
+    background-color: #334155;
+    color: white;
+    height: 100vh;
+    width: 20vw;
+    position: fixed;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    margin: 2vh 2vw;
+}
+
+#list-logo {
+    width: 2.5vw;
+    height: auto;
+}
+/* Sidebar ends here */
+
+
+
+.content {
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: 15vh 1fr;
+}
+
+
+.header {
+    background-color: rgba(128, 128, 128, 0.301);
+    font-size: 2.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: rgba(231,229,228,255);
+}
