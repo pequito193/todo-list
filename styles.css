@@ -27,7 +27,7 @@ body {
 
 .sidebar-header,
 .sidebar-title,
-.option {
+.option-wrapper {
     animation-name: dropdown;
     animation-duration: 2s;
     padding: 2vh 2vw;
@@ -45,10 +45,32 @@ body {
     height: auto;
 }
 
+.sidebar-title {
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+.option-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.option-logo {
+    height: 3vh;
+    width: auto;
+}
+
 .option {
     border: none;
     padding: 6px 12px;
-    margin-left: 2vw;
+    border-radius: 10px;
+    background-color: #222d3a;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 120px;
+    height: 40px;
 }
 
 .footer {
