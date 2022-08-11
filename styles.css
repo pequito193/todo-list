@@ -27,7 +27,7 @@ body {
 
 .sidebar-header,
 .sidebar-title,
-.option-wrapper {
+.option {
     animation-name: dropdown;
     animation-duration: 2s;
     padding: 2vh 2vw;
@@ -50,10 +50,10 @@ body {
     font-size: 1.7rem;
 }
 
-.option-wrapper {
+.options {
     display: flex;
-    align-items: center;
-    gap: 10px
+    flex-direction: column;
+    gap: 3vh;
 }
 
 .option-logo {
@@ -69,8 +69,17 @@ body {
     color: white;
     font-size: 1rem;
     font-weight: bold;
-    width: 120px;
-    height: 40px;
+    width: 8vw;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 2vw;
+}
+
+.option:hover {
+    cursor: pointer;
+    background-color: #435670;
 }
 
 .footer {
@@ -117,6 +126,7 @@ a:hover {
 .header {
     background-color: rgba(128, 128, 128, 0.301);
     font-size: 2.8rem;
+    font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
