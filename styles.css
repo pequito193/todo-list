@@ -14,6 +14,7 @@ body {
     height: 100vh;
     width: 20vw;
     position: fixed;
+    min-width: fit-content;
 }
 
 @keyframes dropdown {
@@ -75,6 +76,7 @@ body {
     align-items: center;
     gap: 10px;
     margin: 0 2vw;
+    min-width: fit-content;
 }
 
 .option:hover {
@@ -88,7 +90,7 @@ body {
     height: 5vh;
     position: fixed;
     bottom: 0;
-    width: 20vw;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
