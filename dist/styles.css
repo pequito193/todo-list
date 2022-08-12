@@ -173,11 +173,14 @@ a:hover {
     font-weight: bold;
     padding: 2vh 2vw;
     margin-bottom: 3vh;
+    word-wrap: break-word;
 }
 
-.project:hover {
+.project:hover,
+.project:focus {
     cursor: pointer;
     background-color: rgb(172, 53, 53);
+    width: 90%;
 }
 
 .tasks {
