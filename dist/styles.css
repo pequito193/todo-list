@@ -64,7 +64,7 @@ body {
 
 .option {
     border: none;
-    padding: 6px 12px;
+    padding: 6px 12px 6px 16px;
     border-radius: 10px;
     background-color: #222d3a;
     color: white;
@@ -96,6 +96,17 @@ body {
     justify-content: center;
     gap: 0.6vw;
     font-weight: bold;
+    animation-name: move-footer;
+    animation-duration: 2s;
+}
+
+@keyframes move-footer {
+    from {
+        transform: translateX(-70vw);
+    }
+    to {
+        transform: translateX(0);
+    }
 }
 
 #footer-logo {
@@ -127,13 +138,47 @@ a:hover {
 
 .header {
     background-color: rgba(128, 128, 128, 0.301);
+    color: #121212;
     font-size: 2.8rem;
     font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 15vh;
 }
 
 .container {
-    background-color: rgba(231,229,228,255);
+    display: grid;
+    grid-template-columns: 14vw 1fr;
+    box-shadow: -10px 0 10px gray;
+    height: 100%;
+}
+
+.projects {
+    box-shadow: -4px 0 4px inset rgba(150, 150, 150, 0.377);
+    grid-column: 1;
+    padding: 10px;
+    height: 100vh;
+}
+
+.project {
+    padding: 4px 12px;
+    background-color: rgb(212, 69, 69);
+    border-radius: 10px;
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2vh 2vw;
+    margin-bottom: 3vh;
+}
+
+.project:hover {
+    cursor: pointer;
+    background-color: rgb(172, 53, 53);
+    transform: translateX(12px);
+}
+
+.task-table {
+    display: grid;
 }
