@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _newProject__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./newProject */ \"./src/newProject.js\");\n\n\nconst createProject = document.querySelector('.new-project')\ncreateProject.addEventListener('click', _newProject__WEBPACK_IMPORTED_MODULE_0__.createNewProject)\n\n//# sourceURL=webpack://todo-list/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _newProject__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./newProject */ \"./src/newProject.js\");\n/* harmony import */ var _newTask__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./newTask */ \"./src/newTask.js\");\n\n\n\n\nconst createProject = document.querySelector('.new-project')\ncreateProject.addEventListener('click', _newProject__WEBPACK_IMPORTED_MODULE_0__.createNewProject)\n\nconst createTask = document.querySelector('.create-task')\ncreateTask.addEventListener('click', _newTask__WEBPACK_IMPORTED_MODULE_1__.createNewTask)\n\n// const newTaskName = document.querySelector('.name-query')\n// newTaskName.addEventListener('keydown', e => {\n//     if (e.code === 'Enter') {\n//         newTaskName.parentElement.textContent = newTaskName.value\n//         newTaskName.parentElement.removeChild(newTaskName)\n//     }\n// })\n\n//# sourceURL=webpack://todo-list/./src/index.js?");
 
 /***/ }),
 
@@ -26,7 +26,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _new
   \***************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createNewProject\": () => (/* binding */ createNewProject)\n/* harmony export */ });\nfunction createNewProject() {\n    const projectList = document.querySelector('.projects')\n    const newProject = document.createElement('button')\n    newProject.classList.add('project')\n    newProject.textContent = prompt('New project name:')\n    projectList.append(newProject)\n}\n\n\n\n//# sourceURL=webpack://todo-list/./src/newProject.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createNewProject\": () => (/* binding */ createNewProject)\n/* harmony export */ });\nfunction createNewProject() {\n\n    const projectList = document.querySelector('.projects')\n\n    const newProject = document.createElement('button')\n        newProject.classList.add('project')\n        newProject.textContent = prompt('New project name:')\n\n        \n    projectList.append(newProject)\n}\n\n\n\n//# sourceURL=webpack://todo-list/./src/newProject.js?");
+
+/***/ }),
+
+/***/ "./src/newTask.js":
+/*!************************!*\
+  !*** ./src/newTask.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createNewTask\": () => (/* binding */ createNewTask)\n/* harmony export */ });\nfunction createNewTask() {\n\n    const taskList = document.querySelector('.task-table')\n\n    const newTask = document.createElement('tr')\n        const taskName = document.createElement('td')\n            const nameQuery = document.createElement('input')\n            nameQuery.classList.add('name-query')\n            nameQuery.setAttribute('type', 'text')\n\n        const dueDate = document.createElement('td')\n            const dateQuery = document.createElement('input')\n            dateQuery.classList.add('date-query')\n            dateQuery.setAttribute('type', 'date')\n\n        const projectName = document.createElement('td')\n            const projectQuery = document.createElement('input')\n            projectQuery.classList.add('project-query')\n           \n\n        taskName.append(nameQuery)\n        dueDate.append(dateQuery)\n        projectName.append(projectQuery)\n\n\n    newTask.append(taskName, dueDate, projectName)\n    taskList.append(newTask)\n}\n\n\n\n//# sourceURL=webpack://todo-list/./src/newTask.js?");
 
 /***/ })
 
