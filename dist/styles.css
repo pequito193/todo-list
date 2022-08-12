@@ -113,6 +113,7 @@ body {
     height: 3vh;
     width: auto;
     -webkit-filter: invert(100%);
+    filter: invert(100%);
 }
 
 a,
