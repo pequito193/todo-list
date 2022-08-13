@@ -1,17 +1,13 @@
 import { createNewProject } from "./newProject";
 import { createNewTask } from "./newTask";
+import { openPopup } from "./openNewTaskPopup";
 
 
 const createProject = document.querySelector('.new-project')
 createProject.addEventListener('click', createNewProject)
 
-const createTask = document.querySelector('.create-task')
-createTask.addEventListener('click', createNewTask)
+const openTaskCreatorPopup = document.querySelector('.create-task')
+openTaskCreatorPopup.addEventListener('click', openPopup)
 
-// const newTaskName = document.querySelector('.name-query')
-// newTaskName.addEventListener('keydown', e => {
-//     if (e.code === 'Enter') {
-//         newTaskName.parentElement.textContent = newTaskName.value
-//         newTaskName.parentElement.removeChild(newTaskName)
-//     }
-// })
+const createTask = document.querySelector('.submit')
+createTask.addEventListener('click', createNewTask)

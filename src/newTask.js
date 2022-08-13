@@ -1,12 +1,12 @@
 function createNewTask() {
 
+    const newTaskCreator = document.querySelector('.new-task-popup')
+    const newTaskName = document.querySelector('#task-name')
     const taskList = document.querySelector('.task-table')
 
     const newTask = document.createElement('tr')
         const taskName = document.createElement('td')
-            const nameQuery = document.createElement('input')
-            nameQuery.classList.add('name-query')
-            nameQuery.setAttribute('type', 'text')
+            taskName.textContent = newTaskName.innerHTML
 
         const dueDate = document.createElement('td')
             const dateQuery = document.createElement('input')
