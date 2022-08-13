@@ -6,7 +6,7 @@ function createNewTask() {
 
     const newTask = document.createElement('tr')
         const taskName = document.createElement('td')
-            taskName.textContent = newTaskName.textContent
+            taskName.textContent = newTaskName.value
 
         const dueDate = document.createElement('td')
             const dateQuery = document.createElement('input')
@@ -14,7 +14,7 @@ function createNewTask() {
             dateQuery.setAttribute('type', 'date')
 
         const projectName = document.createElement('td')
-            // projectName.textContent = newTaskProject.value
+            projectName.textContent = newTaskProject.value
            
 
         dueDate.append(dateQuery)
@@ -30,6 +30,8 @@ function createNewTask() {
     const body = document.querySelector('.dark')
         body.style.visibility = 'hidden'
         body.classList.remove('opaque')
+
+    newTaskName.value = ''
 }
 
 export {createNewTask};

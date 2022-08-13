@@ -7,6 +7,9 @@ function closePopup() {
     const body = document.querySelector('.dark')
         body.style.visibility = 'hidden'
         body.classList.remove('opaque')
+
+    const taskInput = document.querySelector('#task-name')
+    taskInput.value = ''
 }
 
 export {closePopup};
