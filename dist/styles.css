@@ -127,7 +127,7 @@ label {
     filter: invert(10%) sepia(100%) saturate(7063%) hue-rotate(4deg) brightness(101%) contrast(108%);
 }
 
-.trash-can-task,
+.trash-can-task:hover,
 .trash-can:hover {
     cursor: pointer;
     transform: scale(1.1,1.1);
