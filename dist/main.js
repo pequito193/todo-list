@@ -10,13 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/closeNewTaskPopup.js":
+/*!**********************************!*\
+  !*** ./src/closeNewTaskPopup.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"closePopup\": () => (/* binding */ closePopup)\n/* harmony export */ });\nfunction closePopup() {\n\n    const popup = document.querySelector('.new-task-popup')\n        popup.style.visibility = 'hidden'\n        popup.classList.remove('show')\n\n    const body = document.querySelector('.dark')\n        body.style.visibility = 'hidden'\n        body.classList.remove('opaque')\n}\n\n\n\n//# sourceURL=webpack://todo-list/./src/closeNewTaskPopup.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _newProject__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./newProject */ \"./src/newProject.js\");\n/* harmony import */ var _newTask__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./newTask */ \"./src/newTask.js\");\n/* harmony import */ var _openNewTaskPopup__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./openNewTaskPopup */ \"./src/openNewTaskPopup.js\");\n\n\n\n\n\nconst createProject = document.querySelector('.new-project')\ncreateProject.addEventListener('click', _newProject__WEBPACK_IMPORTED_MODULE_0__.createNewProject)\n\nconst openTaskCreatorPopup = document.querySelector('.create-task')\nopenTaskCreatorPopup.addEventListener('click', _openNewTaskPopup__WEBPACK_IMPORTED_MODULE_2__.openPopup)\n\nconst createTask = document.querySelector('.submit')\ncreateTask.addEventListener('click', _newTask__WEBPACK_IMPORTED_MODULE_1__.createNewTask)\n\n\n//# sourceURL=webpack://todo-list/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _newProject__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./newProject */ \"./src/newProject.js\");\n/* harmony import */ var _newTask__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./newTask */ \"./src/newTask.js\");\n/* harmony import */ var _openNewTaskPopup__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./openNewTaskPopup */ \"./src/openNewTaskPopup.js\");\n/* harmony import */ var _closeNewTaskPopup__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./closeNewTaskPopup */ \"./src/closeNewTaskPopup.js\");\n\n\n\n\n\n\n// Allows the user to create a new project\nconst createProject = document.querySelector('.new-project')\ncreateProject.addEventListener('click', _newProject__WEBPACK_IMPORTED_MODULE_0__.createNewProject)\n\n\n// Opens a popup window where the user can specify the details of the new task\nconst openTaskCreatorPopup = document.querySelector('.create-task')\nopenTaskCreatorPopup.addEventListener('click', _openNewTaskPopup__WEBPACK_IMPORTED_MODULE_2__.openPopup)\n\n\n// Gathers the new task's details and adds it to the task list table\nconst createTask = document.querySelector('.submit')\ncreateTask.addEventListener('click', _newTask__WEBPACK_IMPORTED_MODULE_1__.createNewTask)\n\n\n// Closes new task popup incase the user decides not to create a new task\nconst close = document.querySelector('.trash-can')\nclose.addEventListener('click', _closeNewTaskPopup__WEBPACK_IMPORTED_MODULE_3__.closePopup)\n\n\n//# sourceURL=webpack://todo-list/./src/index.js?");
 
 /***/ }),
 
@@ -46,7 +56,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"openPopup\": () => (/* binding */ openPopup)\n/* harmony export */ });\nfunction openPopup() {\n    \n    const popup = document.querySelector('.new-task-popup')\n        popup.style.visibility = 'visible'\n        popup.classList.add('show')\n\n    const body = document.querySelector('.dark')\n    body.style.visibility = 'visible'\n    body.classList.add('opaque')\n}\n\n\n\n//# sourceURL=webpack://todo-list/./src/openNewTaskPopup.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"openPopup\": () => (/* binding */ openPopup)\n/* harmony export */ });\nfunction openPopup() {\n    \n    const popup = document.querySelector('.new-task-popup')\n        popup.style.visibility = 'visible'\n        popup.classList.add('show')\n\n    const body = document.querySelector('.dark')\n        body.style.visibility = 'visible'\n        body.classList.add('opaque')\n}\n\n\n\n//# sourceURL=webpack://todo-list/./src/openNewTaskPopup.js?");
 
 /***/ })
 

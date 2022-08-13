@@ -5,8 +5,8 @@ function openPopup() {
         popup.classList.add('show')
 
     const body = document.querySelector('.dark')
-    body.style.visibility = 'visible'
-    body.classList.add('opaque')
+        body.style.visibility = 'visible'
+        body.classList.add('opaque')
 }
 
 export {openPopup};
