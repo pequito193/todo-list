@@ -120,10 +120,19 @@ label {
     filter: invert(100%);
 }
 
+.trash-can-task {
+    height: 2.5vh;
+    width: auto;
+    margin-right: 1vw;
+    filter: invert(10%) sepia(100%) saturate(7063%) hue-rotate(4deg) brightness(101%) contrast(108%);
+}
+
+.trash-can-task,
 .trash-can:hover {
     cursor: pointer;
     transform: scale(1.1,1.1);
 }
+
 
 
 
@@ -317,7 +326,6 @@ th {
 td {
     background-color: rgb(220, 220, 220);
     padding: 0 0.8vw;
-    max-width: min-content;
 }
 
 .task-name {
