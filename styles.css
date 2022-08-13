@@ -316,6 +316,8 @@ th {
 
 td {
     background-color: rgb(220, 220, 220);
+    padding-left: 0.8vw;
+    max-width: min-content;
 }
 
 .task-name {
