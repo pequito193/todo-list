@@ -1,12 +1,12 @@
 function createNewTask() {
 
-    const newTaskCreator = document.querySelector('.new-task-popup')
     const newTaskName = document.querySelector('#task-name')
+    const newTaskProject = document.querySelector('#project-name')
     const taskList = document.querySelector('.task-table')
 
     const newTask = document.createElement('tr')
         const taskName = document.createElement('td')
-            taskName.textContent = newTaskName.innerHTML
+            taskName.textContent = newTaskName.textContent
 
         const dueDate = document.createElement('td')
             const dateQuery = document.createElement('input')
@@ -14,17 +14,22 @@ function createNewTask() {
             dateQuery.setAttribute('type', 'date')
 
         const projectName = document.createElement('td')
-            const projectQuery = document.createElement('input')
-            projectQuery.classList.add('project-query')
+            // projectName.textContent = newTaskProject.value
            
 
-        taskName.append(nameQuery)
         dueDate.append(dateQuery)
-        projectName.append(projectQuery)
 
 
     newTask.append(taskName, dueDate, projectName)
     taskList.append(newTask)
+
+    const popup = document.querySelector('.new-task-popup')
+        popup.style.visibility = 'hidden'
+        popup.classList.remove('show')
+
+    const body = document.querySelector('.dark')
+        body.style.visibility = 'hidden'
+        body.classList.remove('opaque')
 }
 
 export {createNewTask};
