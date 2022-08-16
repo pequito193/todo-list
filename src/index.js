@@ -1,12 +1,6 @@
-import { createNewProject } from "./newProject";
 import { createNewTask } from "./newTask";
 import { openPopup } from "./openNewTaskPopup";
 import { closePopup } from "./closeNewTaskPopup";
-
-
-// Allows the user to create a new project
-const createProject = document.querySelector('.new-project')
-createProject.addEventListener('click', createNewProject)
 
 
 // Opens a popup window where the user can specify the details of the new task

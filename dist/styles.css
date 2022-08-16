@@ -50,10 +50,10 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #334155;
-    width: 18vw;
-    height: 18vw;
-    min-width: 400px;
-    min-height: 200px;
+    width: 14vw;
+    height: 14vw;
+    min-width: 300px;
+    min-height: 150px;
     border-radius: 40px;
     box-shadow: 10px 10px 10px gray;
     display: flex;
@@ -81,18 +81,9 @@ label {
     border-radius: 20px;
     padding: 4px 12px;
     height: 4vh;
-    width: 10vw;
+    width: 8vw;
+    min-width: 100px;
     font-weight: bold;
-}
-
-#project-name {
-    border: none;
-    width: 10vw;
-    height: 4vh;
-    font-weight: bold;
-    font-size: 1rem;
-    padding-left: 0.2vw;
-    border-radius: 10px;
 }
 
 .button-wrapper {
@@ -103,6 +94,7 @@ label {
 .submit {
     border: none;
     width: 8vw;
+    min-width: 80px;
     height: 40px;
     font-weight: bold;
     font-size: 1rem;
@@ -120,14 +112,6 @@ label {
     filter: invert(100%);
 }
 
-.trash-can-task {
-    height: 2.5vh;
-    width: auto;
-    margin-right: 1vw;
-    filter: invert(10%) sepia(100%) saturate(7063%) hue-rotate(4deg) brightness(101%) contrast(108%);
-}
-
-.trash-can-task:hover,
 .trash-can:hover {
     cursor: pointer;
     transform: scale(1.1,1.1);
@@ -183,7 +167,7 @@ label {
 .options {
     display: flex;
     flex-direction: column;
-    gap: 3vh;
+    gap: 4vh;
 }
 
 .option-logo {
@@ -203,7 +187,7 @@ label {
     height: 50px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     margin: 0 2vw;
     min-width: fit-content;
 }
@@ -279,39 +263,8 @@ a:hover {
 
 .container {
     display: grid;
-    grid-template-columns: 14vw 1fr;
     box-shadow: -10px 0 10px gray;
     height: 100%;
-}
-
-.projects {
-    grid-column: 1;
-    border-right: 3px solid #272727c0;
-    padding: 10px 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.project {
-    width: 96%;
-    background-color: rgb(212, 69, 69);
-    color: white;
-    border: none;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 2vh 2vw;
-    margin-bottom: 3vh;
-    word-wrap: break-word;
-    border-radius: 10%;
-}
-
-.project:hover,
-.project:focus {
-    cursor: pointer;
-    background-color: rgb(172, 53, 53);
-    width: 90%;
 }
 
 .tasks {
@@ -329,11 +282,10 @@ td {
 }
 
 .task-name {
-    padding: 1.25vh 14.2vw;
+    padding: 1.25vh 28vw;
 }
 
-.due-date,
-.project-name {
+.due-date {
     padding: 1.25vh 6vw;
 }
 
@@ -361,7 +313,7 @@ td {
 }
 
 .plus-sign {
-    height: 1.75vh;
+    height: 3vh;
     width: auto;
 }
 

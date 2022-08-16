@@ -19,12 +19,6 @@
             <label for="task-name">Task</label>
             <input type="text" name="project" id="task-name">
         </div>
-        <div class="wrapper">
-            <label for="project">Project</label>
-            <select id="project-name">
-                <option value="general">general</option>
-            </select>
-        </div>
         <div class="button-wrapper">
             <button class="submit">Add</button>
             <img src="./images/trash-can.png" alt="" class="trash-can">
@@ -38,8 +32,6 @@
 
 
         <p class="sidebar-title">Sort by</p>
-
-
         <div class="options">
             <button class="option">
                 <img src="./images/notes.png" alt="" class="option-logo">Today
@@ -53,14 +45,6 @@
         </div>
 
 
-        <p class="sidebar-title">New</p>
-
-
-        <button class="option new-project">
-            <img src="./images/plus.png" alt="" class="option-logo">Project
-        </button>
-
-
         <footer class="footer">
             <img src="./images/github.png" alt="" id="footer-logo">
             <a href="https://github.com/pequito193" target="_blank" class="footer-text">pequito193</a>
@@ -71,19 +55,16 @@
     <div class="content">
         <div class="header">Your Tasks</div>
         <div class="container">
-            <div class="projects">
-                <button class="project">general</button>
-            </div>
             <div class="tasks">
                 <table class="task-table">
                     <tr>
                         <th class="task-name">Task</th>
                         <th class="due-date">Due Date</th>
-                        <th class="project-name">Project</th>
+                        <th class="del-task">Delete</th>
                     </tr>
                 </table>
                 <button class="create-task">
-                    <img src="./images/task-plus.png" alt="" class="plus-sign">
+                    <img src="./images/plus.png" alt="" class="plus-sign">
                     <p class="new-task-add">Add task</p>
                 </button>
             </div>

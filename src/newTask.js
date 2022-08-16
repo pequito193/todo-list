@@ -4,29 +4,23 @@ function createNewTask() {
     const newTaskProject = document.querySelector('#project-name')
     const taskList = document.querySelector('.task-table')
 
-    if (newTaskName.value.length > 0 && newTaskName.value.length < 33) {
+    if (newTaskName.value.length > 0 && newTaskName.value.length < 81) {
         console.log(newTaskName.value.length)
         const newTask = document.createElement('tr')
             const taskName = document.createElement('td')
-                const deleteImage = document.createElement('img')
-                deleteImage.setAttribute('src', './images/trash-can.png')
-                deleteImage.classList.add('trash-can-task')
                 const text = newTaskName.value
-                taskName.append(deleteImage, text)
+                taskName.append(text)
 
             const dueDate = document.createElement('td')
                 const dateQuery = document.createElement('input')
                 dateQuery.classList.add('date-query')
                 dateQuery.setAttribute('type', 'date')
-
-            const projectName = document.createElement('td')
-                projectName.textContent = newTaskProject.value
             
 
             dueDate.append(dateQuery)
 
 
-        newTask.append(taskName, dueDate, projectName)
+        newTask.append(taskName, dueDate)
         taskList.append(newTask)
 
         const popup = document.querySelector('.new-task-popup')
@@ -39,7 +33,7 @@ function createNewTask() {
 
         newTaskName.value = ''
     } else {
-        alert('TASK NAME MUST HAVE BETWEEN 1 AND 32 CHARACTERS')
+        alert('TASK NAME MUST HAVE BETWEEN 1 AND 80 CHARACTERS')
     }
 }
 
